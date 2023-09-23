@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="top">
+        <p class="top-text">Student Portal</p>
+    </div>
+     
+    <!-- Search bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Search">
+        <button id="search-button" class="search-button">Search</button>
+    </div>
+    
+    <!-- Sort buttons -->
+    <div class="sort-container">
+        <button class="sort-button" id="sort-az">Sort A->Z</button>
+        <button class="sort-button" id="sort-za">Sort Z->A</button>
+        <button class="sort-button" id="sort-marks">Sort By Marks</button>
+        <button class="sort-button" id="sort-passing">Sort By Passing</button>
+        <button class="sort-button" id="sort-class">Sort By Class</button>
+        <button class="sort-button" id="sort-gender">Sort By Gender</button>
+    </div>
+ 
+    <!-- Table -->
+    <div class="table-container"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Table rows will be populated here --> 
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
